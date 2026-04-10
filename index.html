@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareCompanion Recovery Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">CareCompanion</a>
+      <nav class="site-nav" id="site-nav">
+        <a href="#benefits">Benefits</a>
+        <a href="#features">Features</a>
+        <a href="#daily-log">Daily Log</a>
+        <a href="#stories">Stories</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#resources">Resources</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-secondary" href="#daily-log">Start Logging</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Post-surgery recovery</p>
+          <h1>Recovery tracking for patients after major surgery.</h1>
+          <p>CareCompanion helps patients log daily healing indicators, stay on track after discharge, and create surgeon-ready summary reports for follow-up visits.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#daily-log">Start logging today</a>
+            <a class="button button-outline" href="#how-it-works">See how it works</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-content">
+            <span class="stat">Daily recovery log</span>
+            <p>Record pain, mobility, medications, symptoms, and mood in one place. Share a structured report with your care team.</p>
+            <div class="hero-links">
+              <a href="#features">Key Features</a>
+              <a href="#stories">Patient stories</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="benefits">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Core challenge</p>
+          <h2>A structured, daily recovery system that closes the gap between appointments.</h2>
+        </div>
+        <div class="grid cards-grid">
+          <article class="card">
+            <h3>Track daily indicators</h3>
+            <p>Patients log pain, wound status, mobility, medication adherence, and sleep every day.</p>
+          </article>
+          <article class="card">
+            <h3>Surface warning signs</h3>
+            <p>Watch for deviations and trends so patients and providers can act before complications escalate.</p>
+          </article>
+          <article class="card">
+            <h3>Empower patients</h3>
+            <p>Give patients a simple, guided way to capture recovery progress and feel more confident after discharge.</p>
+          </article>
+          <article class="card">
+            <h3>Improve surgeon visibility</h3>
+            <p>Surgeons get a clear, shareable summary report instead of relying only on appointment snapshots.</p>
+          </article>
+          <article class="card">
+            <h3>Reduce follow-up uncertainty</h3>
+            <p>Structured logs replace vague timelines with measurable daily recovery data.</p>
+          </article>
+          <article class="card">
+            <h3>Share progress easily</h3>
+            <p>Patients export a full recovery summary to bring to their next provider visit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section secondary" id="features">
+      <div class="container split-grid">
+        <div>
+          <p class="eyebrow">Real-world context</p>
+          <h2>Patients need a simple recovery log with meaningful output for clinicians.</h2>
+          <p>After discharge, recovery progress is hard to measure. CareCompanion gives patients a daily home for recovery indicators and turns the data into actionable reports.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Patient daily log</h3>
+            <p>Record pain, energy, wound condition, medications, mood, and notes in one accessible place.</p>
+          </article>
+          <article class="service-card">
+            <h3>Surgeon-ready reports</h3>
+            <p>Generate a concise recovery summary for use at the next appointment or virtual check-in.</p>
+          </article>
+          <article class="service-card">
+            <h3>Trend alerts</h3>
+            <p>Get highlighted changes in symptoms or recovery patterns so you can respond quickly.</p>
+          </article>
+          <article class="service-card">
+            <h3>Family caregiver support</h3>
+            <p>Caregivers can review logs and feel confident that progress is being tracked and shared.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="daily-log">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Daily log</p>
+          <h2>Capture every recovery detail in one place.</h2>
+          <p>Use a guided daily form to log pain, symptoms, mobility, medication, and notes. Build a report your care team can review quickly.</p>
+        </div>
+        <div class="log-grid">
+          <form class="log-form" id="recovery-form">
+            <div class="field-group">
+              <label for="entry-date">Date</label>
+              <input type="date" id="entry-date" name="date" required />
+            </div>
+            <div class="field-group">
+              <label for="pain-level">Pain level</label>
+              <select id="pain-level" name="painLevel" required>
+                <option value="">Select pain</option>
+                <option>0 - No pain</option>
+                <option>1 - Very mild</option>
+                <option>2 - Mild</option>
+                <option>3 - Moderate</option>
+                <option>4 - Severe</option>
+                <option>5 - Very severe</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label for="mobility">Mobility</label>
+              <select id="mobility" name="mobility" required>
+                <option value="">Select mobility</option>
+                <option>Normal</option>
+                <option>Assisted</option>
+                <option>Limited</option>
+                <option>Bed rest</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label for="wound-status">Wound status</label>
+              <select id="wound-status" name="woundStatus" required>
+                <option value="">Select status</option>
+                <option>Dry/clean</option>
+                <option>Minor redness</option>
+                <option>Swelling</option>
+                <option>Drainage present</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label for="meds-taken">Medication taken?</label>
+              <select id="meds-taken" name="medsTaken" required>
+                <option value="">Select answer</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="field-group full-width">
+              <label for="notes">Notes</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Add details about symptoms, sleep, appetite, or activities."></textarea>
+            </div>
+            <button class="button button-primary" type="submit">Save entry</button>
+          </form>
+          <div class="summary-card">
+            <h3>Recovery summary</h3>
+            <div class="summary-details" id="summary-details">
+              <p>No entries yet. Start logging to generate a recovery report.</p>
+            </div>
+            <button class="button button-outline" id="copy-report" type="button">Copy report</button>
+          </div>
+        </div>
+        <div class="entry-list" id="entry-list">
+          <h3>Recent entries</h3>
+          <p class="entry-empty">No recovery entries recorded yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stories">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Real Stories, Real Progress</p>
+          <h2>Recovery journeys informed by daily tracking.</h2>
+        </div>
+        <div class="grid cards-grid">
+          <article class="story-card">
+            <h3>Paula's knee recovery</h3>
+            <p>After surgery, Paula used daily check-ins to catch swelling early and keep her surgeon updated between visits.</p>
+            <a href="#">Read her recovery story</a>
+          </article>
+          <article class="story-card">
+            <h3>Tom's surgery follow-up</h3>
+            <p>Tom shared his structured report at his six-week appointment and avoided an unnecessary imaging visit.</p>
+            <a href="#">See how it helped</a>
+          </article>
+          <article class="story-card">
+            <h3>Dr. Lee's care pathway</h3>
+            <p>Dr. Lee uses CareCompanion summaries to review patient recovery more efficiently during busy clinic days.</p>
+            <a href="#">Learn from the clinician view</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section secondary" id="how-it-works">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2>Three steps to a safer, more visible recovery.</h2>
+        </div>
+        <div class="grid steps-grid">
+          <article class="step-card">
+            <span class="step-number">1</span>
+            <h3>Log daily recovery details.</h3>
+            <p>Patients record pain, wound healing, mobility, medications, and symptoms in a few minutes each day.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">2</span>
+            <h3>Monitor changes over time.</h3>
+            <p>The app tracks recovery trends and highlights anything that falls outside typical healing patterns.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">3</span>
+            <h3>Share a structured summary report.</h3>
+            <p>Export a clean, clinician-ready report to bring to a follow-up appointment or share with your care team.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resources" id="resources">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Resources</p>
+          <h2>Tools and guidance for recovery success.</h2>
+        </div>
+        <div class="grid cards-grid">
+          <article class="resource-card">
+            <p class="resource-type">Checklist</p>
+            <h3>Post-surgery recovery planner</h3>
+            <p>Use this checklist to keep recovery tasks organized and complete each day.</p>
+          </article>
+          <article class="resource-card">
+            <p class="resource-type">Report</p>
+            <h3>Surgeon-ready summary</h3>
+            <p>See how daily recovery logs become useful clinical information for follow-up care.</p>
+          </article>
+          <article class="resource-card">
+            <p class="resource-type">Guide</p>
+            <h3>Recovery tracking best practices</h3>
+            <p>Learn what to log and how to share your progress with your care team.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>CareCompanion</h3>
+        <p>Recovery tracking designed to help patients and clinicians stay aligned after surgery.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>For</h4>
+          <a href="#benefits">Patients</a>
+          <a href="#benefits">Surgeons</a>
+          <a href="#benefits">Caregivers</a>
+          <a href="#resources">Resources</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>CareCompanion Inc © 2026</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const siteNav = document.getElementById('site-nav');
+    navToggle?.addEventListener('click', () => {
+      siteNav?.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

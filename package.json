@@ -1,0 +1,13 @@
+{
+  "name": "carecompanion-recovery-tracker",
+  "version": "1.0.0",
+  "description": "Full-stack recovery tracker web app with backend and SQLite database.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.4",
+    "sqlite3": "^5.1.6"
+  }
+}
